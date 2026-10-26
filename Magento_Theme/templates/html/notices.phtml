@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\Theme\Block\Html\Notices
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+?>
+<?php if ($block->displayNoscriptNotice()): ?>
+    <noscript>
+        <div class="noscript">
+            <p>
+                <strong><?= $escaper->escapeHtml(__('JavaScript seems to be disabled in your browser.')) ?></strong>
+                <span>
+                    <?= $escaper->escapeHtml(
+                        __('For the best experience on our site, be sure to turn on Javascript in your browser.')
+                    ) ?>
+                </span>
+            </p>
+        </div>
+    </noscript>
+<?php endif; ?>

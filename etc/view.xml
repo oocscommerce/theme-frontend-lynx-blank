@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © OOCS Commerce (https://www.oocscommerce.com). All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+
+<view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/view.xsd">
+    <media>
+        <!--
+            Product image types used by the Lynx components, and by the core code
+            still asking for them (the minicart section, above all). The theme has
+            no parent to fall back on, so every type it needs is declared here;
+            the values follow Magento/blank, except the category grid
+            which serves a taller 375px image (object-contain, 4:5).
+        -->
+        <images module="Magento_Catalog">
+            <image id="category_page_grid" type="small_image">
+                <width>300</width>
+                <height>375</height>
+            </image>
+            <!-- The card's smaller srcset candidate, for cards narrower than 300px -->
+            <image id="category_page_grid_small" type="small_image">
+                <width>200</width>
+                <height>250</height>
+            </image>
+            <image id="category_page_list" type="small_image">
+                <width>240</width>
+                <height>300</height>
+            </image>
+            <image id="product_page_image_small" type="thumbnail">
+                <width>90</width>
+                <height>90</height>
+            </image>
+            <image id="product_page_image_medium" type="image">
+                <width>700</width>
+                <height>700</height>
+            </image>
+            <image id="product_page_image_large" type="image"/>
+            <image id="product_thumbnail_image" type="thumbnail">
+                <width>75</width>
+                <height>75</height>
+            </image>
+            <image id="mini_cart_product_thumbnail" type="thumbnail">
+                <width>156</width>
+                <height>156</height>
+            </image>
+            <image id="cart_page_product_thumbnail" type="small_image">
+                <width>240</width>
+                <height>300</height>
+            </image>
+            <image id="wishlist_thumbnail" type="small_image">
+                <width>240</width>
+                <height>300</height>
+            </image>
+            <image id="related_products_list" type="small_image">
+                <width>140</width>
+                <height>140</height>
+            </image>
+            <image id="upsell_products_list" type="small_image">
+                <width>140</width>
+                <height>140</height>
+            </image>
+        </images>
+    </media>
+</view>
